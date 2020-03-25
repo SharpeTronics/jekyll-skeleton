@@ -1,0 +1,14 @@
+/* header layout molecule */
+header {
+  height: auto !important;
+}
+
+header img {
+  transition: all 0.8s ease-out;
+  }
+
+header img:hover {
+  transition: all 0.8s ease-out;
+  transform: scale(.95);
+  opacity: .9
+}

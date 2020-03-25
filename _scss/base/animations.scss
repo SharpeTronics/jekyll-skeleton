@@ -1,0 +1,183 @@
+/* Lightweight Animation CSS3 */
+/* Example use: <h2 class="forever slide-up-in">slide-up-in</h2> */
+/* Sliding Animations */
+
+$animation-duration-slide: 700ms;
+$animation-duration-fade: 600ms;
+
+@keyframes slide-up-in {
+	from {
+        transform: translateY(100%);
+    }
+	to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up-out {
+	from {
+        transform: translateY(0);
+    }
+	to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-down-in {
+	from {
+        transform: translateY(-100%);
+    }
+	to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down-out {
+	from {
+        transform: translateY(0);
+    }
+	to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left-in {
+	from {
+        transform: translateX(-100%);
+    }
+	to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left-out {
+	from {
+        transform: translateX(0);
+    }
+	to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-right-in {
+	from {
+        transform: translateX(100%);
+    }
+	to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right-out {
+	from {
+        transform: translateX(0);
+    }
+	to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+%slide {
+    will-change: transform;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: $animation-duration-slide;
+}
+
+%slide-in {
+    @extend %slide;
+    opacity: 0;
+}
+
+%slide-out {
+    @extend %slide;
+    opacity: 1;
+}
+
+.slide {
+    &-up {
+        &-in {
+            @extend %slide-in;
+            animation-name: slide-up-in;
+        }
+        &-out {
+            @extend %slide-out;
+            animation-name: slide-up-out;
+        }
+    }
+    &-down {
+        &-in {
+            @extend %slide-in;
+            animation-name: slide-down-in;
+        }
+        &-out {
+            @extend %slide-out;
+            animation-name: slide-down-out;
+        }
+    }
+    &-left {
+        &-in {
+            @extend %slide-in;
+            animation-name: slide-left-in;
+        }
+        &-out {
+            @extend %slide-out;
+            animation-name: slide-left-out;
+        }
+    }
+    &-right {
+        &-in {
+            @extend %slide-in;
+            animation-name: slide-right-in;
+        }
+        &-out {
+            @extend %slide-out;
+            animation-name: slide-right-out;
+        }
+    }
+}
+
+/* Fading Animations */
+@keyframes fade-in {
+	from {
+        opacity: 0;
+    }
+	to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+	from {
+        opacity: 1;
+    }
+	to {
+        opacity: 0;
+    }
+}
+
+%fade {
+    will-change: opacity;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: $animation-duration-fade;
+}
+
+.fade {
+    &-in {
+        @extend %fade;
+        animation-name: fade-in;
+    }
+    &-out {
+        @extend %fade;
+        animation-name: fade-out;
+    }
+}

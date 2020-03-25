@@ -1,0 +1,67 @@
+
+<!-- A reusable HTML5 boilerplate created by Charles Sharpe
+includes standard search engine optimization (SEO), basic accessibility (ARIA)
+and quality developer practiced standards.
+
+Enabling developers to quickly get up and running with quality features,
+including clean code to collaborate with others.
+
+Author: Charles Sharpe
+Date: Feb. 21, 2020
+Source: https://www.csharpe.me
+License: MIT license: http://opensource.org/licenses/MIT -->
+
+<head>
+  <META charset="utf-8">
+  <META http-equiv="X-UA-Compatible" CONTENT="IE=edge">
+  <META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+  <META NAME="robots" CONTENT="index, follow">
+
+  <META NAME="author" CONTENT="{{ site.author }}">
+  <META NAME="description" CONTENT="{{ site.description }}">
+  <META NAME="keywords" CONTENT="{{ site.keywords }}">
+
+  <!-- Geolocation Search Engine Optimization BING -->
+  <META NAME="geo.position" CONTENT="39.63;-79,96" />
+  <META NAME="geo.placename" CONTENT="Charles Town" />
+  <META NAME="geo.region" CONTENT="US-WV" />
+  <META NAME="ICBM" content="39.63, -79,96" />
+
+  <!-- Standard SEO Twitter Card data -->
+  <META NAME="twitter:card" content="summary">
+  <META NAME="twitter:site" content="@{{ site.twitter_username }}">
+  <META NAME="twitter:title" content="{{ page.title }}">
+  <META NAME="twitter:description" content="{{ page.description }}">
+  <META NAME="twitter:creator" content="@{{ site.twitter_username }}">
+
+  <!-- Standard SEO Twitter Summary card images must be at least 120x120px -->
+  <META NAME="twitter:image" content="{{ page.image_url }}">
+  <META NAME="twitter:alt" content="{{ page.image_alt }}">
+
+  <!-- Standard SEO Open Graph data -->
+  <META property="og:title" content="{{ page.title }}" />
+  <META property="og:type" content="article" />
+  <META property="og:url" content="{{ page.url }}" />
+  <META property="og:image" content="{{ page.image_url }}" />
+  <META property="og:image" content="{{ page.image_alt }}" />
+  <META property="og:description" content="{{ site.description }}" />
+  <META property="og:site_name" content="{{ site.title }}" />
+  <META property="fb:admins" content="{{ site.fb_adminid }}" />
+
+  <!-- Favicons for various browsers including mobile -->
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon-64x64.ico" sizes="64x64">
+
+  <!-- Jekyll RSS Feed Plugin -->
+  {%- feed_meta -%}
+
+  <!-- Site title goes here -->
+  <title> {{ site.title }} | {{ page.title }} </title>
+
+  <!-- Linking local cascading stylesheets CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <!-- Loading local fonts ; preload for fast generation-->
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/tangerine-bold.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/courgette-regular.woff2" as="font">
+
+</head>
