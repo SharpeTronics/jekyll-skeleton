@@ -20,9 +20,9 @@ All Ruby dependencies are created and stored in the Docker container. Simple, sm
 2. ```cd jekyll```
 3. ```docker-compose up```
 
-# *Happy Hacking! :)*
+*Happy Hacking! :)*
 
-# Further Reading
+## Further Reading
 * Docker Engine https://docs.docker.com/install/
 * Docker Compose https://docs.docker.com/compose/install/
 * Jekyll https://jekyllrb.com/
