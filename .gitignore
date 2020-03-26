@@ -1,4 +1,6 @@
-_site/
-CNAME
-.jekyll-cache/
+_site
 Gemfile.lock
+Gemfile
+CNAME
+.git
+.jekyll-cache
