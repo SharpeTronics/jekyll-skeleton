@@ -1,1 +1,48 @@
 /* navigation component molecule */
+#navigation {
+  height: 100%;
+  width: 55%;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#navigation ul {
+  margin-top: -5em;
+  padding-inline-start: 0px;
+}
+
+#navigation ul li {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#sticky-top {
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: tan;
+    z-index: 10000;
+}
+
+#sticky-top ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#sticky-top ul li {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  margin: 1em;
+}
+
+#sticky-top ul li a{
+  display: flex;
+  flex-direction: row;
+}

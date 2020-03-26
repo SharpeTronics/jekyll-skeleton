@@ -1,0 +1,17 @@
+#sidepanel {
+  height: 100%;
+  width: 45%;
+  word-wrap: break-word;
+}
+
+#sidepanel ul {
+  padding-inline-start: 0px;
+}
+
+#sidepanel ul li {
+  padding-top: 1.2em;
+  line-height: 1.0em;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: lightgrey;
+}

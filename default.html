@@ -1,0 +1,36 @@
+{% comment %}
+	The default layout for the site, which is extended by all other layouts.
+	Includes the document <head>, main navigation and page footer
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+      <div class="page-wrapper">
+
+        {%- include header.html -%}
+        {%- include navigation.html -%}
+
+
+        <main class="page-content" aria-label="Content">
+          <div>
+            {% comment %}
+            	Any layout that extends this layout will have its contents
+            	added as the content variable
+            {% endcomment %}
+
+            {{ content }}
+          </div>
+        </main>
+
+        <!-- JS scripts get loaded last-->
+        <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
+
+      </div>
+      {%- include footer.html -%}
+  </body>
+
+</html>

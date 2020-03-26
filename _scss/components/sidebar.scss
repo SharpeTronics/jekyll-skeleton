@@ -1,0 +1,14 @@
+#sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+  width: 34%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#sidebar ul li {
+  list-style: none;
+}

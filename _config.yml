@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vanilla Template
+title: Vanilla Blog Template
 email: vanilla@email.com
-author: Vanilla Smooth
+author: Vanilla Smooth News
 keywords: Vanilla, Template
 description: >- # this means to ignore newlines until "baseurl:"
   This template is the base template for creating all new templates from.

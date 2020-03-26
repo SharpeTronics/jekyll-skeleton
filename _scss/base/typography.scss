@@ -1,17 +1,22 @@
-/* application font-types examples */
-
-/* Tangerine Bold */
-@font-face {
-  font-family: 'Tangerine';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Tangerine Bold'), local('Tangerine-Bold'), url('/assets/fonts/tangerine-bold.woff2') format('woff2');
+/* application font-types  */
+body, body a {
+  font-size: 16px;
 }
 
-/* Courgette Regular */
-@font-face {
-  font-family: 'Courgette';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Courgette Regular'), local('Courgette-Regular'), url('/assets/fonts/courgette-regular.woff2') format('woff2');
+body a {
+  text-decoration: none;
+}
+
+body a:hover {
+  opacity: .5;
+}
+
+
+#navigation a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#sidepanel a {
+  font-size: 14px;
 }

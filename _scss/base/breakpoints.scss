@@ -1,5 +1,23 @@
-@media(max-width: 825px) {
-  body {
-    background-color: white;
+@media(max-width: 1023px) {
+  #sidebar {
+    display: none !important;
+  }
+  #sticky-top {
+    display: flex;
+  }
+  header {
+    width: auto !important;
+  }
+  #content {
+   margin-left: 0px !important;
+  }
+  footer {
+    margin-top: 7em;
+  }
+}
+
+@media(min-width: 1024px) {
+  #sticky-top {
+    display: none !important;
   }
 }

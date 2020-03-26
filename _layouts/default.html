@@ -9,28 +9,26 @@
   {%- include head.html -%}
 
   <body>
-      <div class="page-wrapper">
+		<div id="root">
+			{%- include topnav.html -%}
+					<section id="sidebar">
+						{%- include sidebar.html -%}
+					</section>
+					<section id="content" class="expand">
+		        <main aria-label="Content">
+		          <div>
+		            {% comment %}
+		            	Any layout that extends this layout will have its contents
+		            	added as the content variable
+		            {% endcomment %}
 
-        {%- include header.html -%}
-        {%- include navigation.html -%}
-
-
-        <main class="page-content" aria-label="Content">
-          <div>
-            {% comment %}
-            	Any layout that extends this layout will have its contents
-            	added as the content variable
-            {% endcomment %}
-
-            {{ content }}
-          </div>
-        </main>
-
-        <!-- JS scripts get loaded last-->
-        <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
-
-      </div>
-      {%- include footer.html -%}
+		            {{ content }}
+		          </div>
+		        </main>
+						{%- include footer.html -%}
+					</section>
+				</div>
+		<!-- JS scripts get loaded last-->
+		<script src="{{ "/assets/js/app.js" | relative_url }}"></script>
   </body>
-
 </html>
