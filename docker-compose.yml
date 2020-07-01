@@ -5,13 +5,13 @@
 # export JEKYLL_VERSION=4.0
 
 ## 1. Creating a New Project with Docker
-# docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll new mynewproject
+# sudo docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll new mynewproject
 
 ## 2. Serving the Blog
-# docker run --name mynewproject --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve --watch --drafts
+# sudo docker run --name mynewproject --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve --watch --drafts
 
 ## 3. [optional] Building an Existing Site for PRODUCTION _site directory
-# docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build --trace
+# sudo docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build --trace
 
 ## 4. Setup docker-compose commands for easy & quicker docker container management [docker-compose --help]
 ## Create and start containers in relative directory
