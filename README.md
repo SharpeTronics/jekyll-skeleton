@@ -25,6 +25,7 @@ All Ruby dependencies are created and stored in the Docker container. Simple, sm
 ## Further Reading
 * Docker Engine https://docs.docker.com/install/
 * Docker Compose https://docs.docker.com/compose/install/
+* Docker Compose Non-Root User https://docs.docker.com/engine/install/linux-postinstall/
 * Jekyll https://jekyllrb.com/
 * Forestry https://forestry.io/
 * Git https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
