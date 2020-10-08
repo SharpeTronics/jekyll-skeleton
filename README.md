@@ -1,7 +1,7 @@
 # Summary
-This template is the base template for creating all new templates from. Only core functionality is created to expand upon from this base template. Beginning new templates or projects, clone this template.
+A Jekyll based web skeleton with universal developer happy flappy pancakes. No operating system dependencies required, only Docker super machines. 
 
-The base template is compatible with Forestry.io + SCSS ready!
+The base template is Docker Engine + SCSS ready!
 
 # Jekyll Plugins
 * Menus
@@ -25,7 +25,5 @@ All Ruby dependencies are created and stored in the Docker container. Simple, sm
 ## Further Reading
 * Docker Engine https://docs.docker.com/install/
 * Docker Compose https://docs.docker.com/compose/install/
-* Docker Compose Non-Root User https://docs.docker.com/engine/install/linux-postinstall/
 * Jekyll https://jekyllrb.com/
-* Forestry https://forestry.io/
 * Git https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
